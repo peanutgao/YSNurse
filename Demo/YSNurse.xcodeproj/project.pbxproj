@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CE867EA1E1F7214003E5783 /* YSMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE867E91E1F7214003E5783 /* YSMainMenuViewController.m */; };
+		7CE867EE1E1F725C003E5783 /* YSArrayTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE867ED1E1F725C003E5783 /* YSArrayTestViewController.m */; };
+		7CE867F21E1F726F003E5783 /* YSDictionaryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE867F11E1F726F003E5783 /* YSDictionaryTestViewController.m */; };
+		7CE867F61E1F7281003E5783 /* YSAttributeStringTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE867F51E1F7281003E5783 /* YSAttributeStringTestViewController.m */; };
+		7CE867FA1E1F7541003E5783 /* YSStringTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE867F91E1F7541003E5783 /* YSStringTestViewController.m */; };
+		7CF6A1021E02F125008BE32E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6A1011E02F125008BE32E /* main.m */; };
+		7CF6A1051E02F125008BE32E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6A1041E02F125008BE32E /* AppDelegate.m */; };
+		7CF6A10D1E02F125008BE32E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6A10C1E02F125008BE32E /* Assets.xcassets */; };
+		7CF6A1101E02F125008BE32E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF6A10E1E02F125008BE32E /* LaunchScreen.storyboard */; };
+		7CF78FAC1E23919500DCC818 /* YSNSObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FAB1E23919500DCC818 /* YSNSObjectViewController.m */; };
+		7CF78FAE1E2391B600DCC818 /* YSNSObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CF78FAD1E2391B600DCC818 /* YSNSObjectViewController.xib */; };
+		7CF78FB21E23965E00DCC818 /* YSExceptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FB01E23965E00DCC818 /* YSExceptionViewController.m */; };
+		7CF78FB31E23965E00DCC818 /* YSExceptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CF78FB11E23965E00DCC818 /* YSExceptionViewController.xib */; };
+		7CF78FCE1E23E16200DCC818 /* NSArray+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FB61E23E16200DCC818 /* NSArray+Nurse.m */; };
+		7CF78FCF1E23E16200DCC818 /* NSAttributedString+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FB81E23E16200DCC818 /* NSAttributedString+Nurse.m */; };
+		7CF78FD01E23E16200DCC818 /* NSDictionary+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FBA1E23E16200DCC818 /* NSDictionary+Nurse.m */; };
+		7CF78FD11E23E16200DCC818 /* NSMutableArray+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FBC1E23E16200DCC818 /* NSMutableArray+Nurse.m */; };
+		7CF78FD21E23E16200DCC818 /* NSMutableAttributedString+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FBE1E23E16200DCC818 /* NSMutableAttributedString+Nurse.m */; };
+		7CF78FD31E23E16200DCC818 /* NSMutableDictionary+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FC01E23E16200DCC818 /* NSMutableDictionary+Nurse.m */; };
+		7CF78FD41E23E16200DCC818 /* NSMutableString+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FC21E23E16200DCC818 /* NSMutableString+Nurse.m */; };
+		7CF78FD51E23E16200DCC818 /* NSObject+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FC41E23E16200DCC818 /* NSObject+Nurse.m */; };
+		7CF78FD61E23E16200DCC818 /* NSString+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FC61E23E16200DCC818 /* NSString+Nurse.m */; };
+		7CF78FD71E23E16200DCC818 /* UIResponder+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FC81E23E16200DCC818 /* UIResponder+Nurse.m */; };
+		7CF78FD81E23E16200DCC818 /* YSNurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FCA1E23E16200DCC818 /* YSNurse.m */; };
+		7CF78FD91E23E16200DCC818 /* YSNurseSwizz.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FCD1E23E16200DCC818 /* YSNurseSwizz.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7CE867E81E1F7214003E5783 /* YSMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMainMenuViewController.h; sourceTree = "<group>"; };
+		7CE867E91E1F7214003E5783 /* YSMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMainMenuViewController.m; sourceTree = "<group>"; };
+		7CE867EC1E1F725C003E5783 /* YSArrayTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSArrayTestViewController.h; sourceTree = "<group>"; };
+		7CE867ED1E1F725C003E5783 /* YSArrayTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSArrayTestViewController.m; sourceTree = "<group>"; };
+		7CE867F01E1F726F003E5783 /* YSDictionaryTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSDictionaryTestViewController.h; sourceTree = "<group>"; };
+		7CE867F11E1F726F003E5783 /* YSDictionaryTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSDictionaryTestViewController.m; sourceTree = "<group>"; };
+		7CE867F41E1F7281003E5783 /* YSAttributeStringTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAttributeStringTestViewController.h; sourceTree = "<group>"; };
+		7CE867F51E1F7281003E5783 /* YSAttributeStringTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAttributeStringTestViewController.m; sourceTree = "<group>"; };
+		7CE867F81E1F7541003E5783 /* YSStringTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSStringTestViewController.h; sourceTree = "<group>"; };
+		7CE867F91E1F7541003E5783 /* YSStringTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSStringTestViewController.m; sourceTree = "<group>"; };
+		7CF6A0FD1E02F125008BE32E /* YSNurse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSNurse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF6A1011E02F125008BE32E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7CF6A1031E02F125008BE32E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7CF6A1041E02F125008BE32E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7CF6A10C1E02F125008BE32E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CF6A10F1E02F125008BE32E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CF6A1111E02F125008BE32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF78FAA1E23919500DCC818 /* YSNSObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSNSObjectViewController.h; sourceTree = "<group>"; };
+		7CF78FAB1E23919500DCC818 /* YSNSObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSNSObjectViewController.m; sourceTree = "<group>"; };
+		7CF78FAD1E2391B600DCC818 /* YSNSObjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSNSObjectViewController.xib; sourceTree = "<group>"; };
+		7CF78FAF1E23965E00DCC818 /* YSExceptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSExceptionViewController.h; sourceTree = "<group>"; };
+		7CF78FB01E23965E00DCC818 /* YSExceptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSExceptionViewController.m; sourceTree = "<group>"; };
+		7CF78FB11E23965E00DCC818 /* YSExceptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSExceptionViewController.xib; sourceTree = "<group>"; };
+		7CF78FB51E23E16200DCC818 /* NSArray+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Nurse.h"; sourceTree = "<group>"; };
+		7CF78FB61E23E16200DCC818 /* NSArray+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Nurse.m"; sourceTree = "<group>"; };
+		7CF78FB71E23E16200DCC818 /* NSAttributedString+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Nurse.h"; sourceTree = "<group>"; };
+		7CF78FB81E23E16200DCC818 /* NSAttributedString+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Nurse.m"; sourceTree = "<group>"; };
+		7CF78FB91E23E16200DCC818 /* NSDictionary+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Nurse.h"; sourceTree = "<group>"; };
+		7CF78FBA1E23E16200DCC818 /* NSDictionary+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Nurse.m"; sourceTree = "<group>"; };
+		7CF78FBB1E23E16200DCC818 /* NSMutableArray+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Nurse.h"; sourceTree = "<group>"; };
+		7CF78FBC1E23E16200DCC818 /* NSMutableArray+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Nurse.m"; sourceTree = "<group>"; };
+		7CF78FBD1E23E16200DCC818 /* NSMutableAttributedString+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Nurse.h"; sourceTree = "<group>"; };
+		7CF78FBE1E23E16200DCC818 /* NSMutableAttributedString+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Nurse.m"; sourceTree = "<group>"; };
+		7CF78FBF1E23E16200DCC818 /* NSMutableDictionary+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Nurse.h"; sourceTree = "<group>"; };
+		7CF78FC01E23E16200DCC818 /* NSMutableDictionary+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Nurse.m"; sourceTree = "<group>"; };
+		7CF78FC11E23E16200DCC818 /* NSMutableString+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+Nurse.h"; sourceTree = "<group>"; };
+		7CF78FC21E23E16200DCC818 /* NSMutableString+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Nurse.m"; sourceTree = "<group>"; };
+		7CF78FC31E23E16200DCC818 /* NSObject+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Nurse.h"; sourceTree = "<group>"; };
+		7CF78FC41E23E16200DCC818 /* NSObject+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Nurse.m"; sourceTree = "<group>"; };
+		7CF78FC51E23E16200DCC818 /* NSString+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Nurse.h"; sourceTree = "<group>"; };
+		7CF78FC61E23E16200DCC818 /* NSString+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Nurse.m"; sourceTree = "<group>"; };
+		7CF78FC71E23E16200DCC818 /* UIResponder+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Nurse.h"; sourceTree = "<group>"; };
+		7CF78FC81E23E16200DCC818 /* UIResponder+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Nurse.m"; sourceTree = "<group>"; };
+		7CF78FC91E23E16200DCC818 /* YSNurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSNurse.h; sourceTree = "<group>"; };
+		7CF78FCA1E23E16200DCC818 /* YSNurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSNurse.m; sourceTree = "<group>"; };
+		7CF78FCB1E23E16200DCC818 /* YSNurseMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSNurseMacro.h; sourceTree = "<group>"; };
+		7CF78FCC1E23E16200DCC818 /* YSNurseSwizz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSNurseSwizz.h; sourceTree = "<group>"; };
+		7CF78FCD1E23E16200DCC818 /* YSNurseSwizz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSNurseSwizz.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CF6A0FA1E02F125008BE32E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CF6A0F41E02F125008BE32E = {
+			isa = PBXGroup;
+			children = (
+				7CF6A0FF1E02F125008BE32E /* YSNurse */,
+				7CF6A0FE1E02F125008BE32E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CF6A0FE1E02F125008BE32E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CF6A0FD1E02F125008BE32E /* YSNurse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CF6A0FF1E02F125008BE32E /* YSNurse */ = {
+			isa = PBXGroup;
+			children = (
+				7CF6A1031E02F125008BE32E /* AppDelegate.h */,
+				7CF6A1041E02F125008BE32E /* AppDelegate.m */,
+				7CE867E81E1F7214003E5783 /* YSMainMenuViewController.h */,
+				7CE867E91E1F7214003E5783 /* YSMainMenuViewController.m */,
+				7CE867EC1E1F725C003E5783 /* YSArrayTestViewController.h */,
+				7CE867ED1E1F725C003E5783 /* YSArrayTestViewController.m */,
+				7CE867F01E1F726F003E5783 /* YSDictionaryTestViewController.h */,
+				7CE867F11E1F726F003E5783 /* YSDictionaryTestViewController.m */,
+				7CE867F81E1F7541003E5783 /* YSStringTestViewController.h */,
+				7CE867F91E1F7541003E5783 /* YSStringTestViewController.m */,
+				7CE867F41E1F7281003E5783 /* YSAttributeStringTestViewController.h */,
+				7CE867F51E1F7281003E5783 /* YSAttributeStringTestViewController.m */,
+				7CF78FAA1E23919500DCC818 /* YSNSObjectViewController.h */,
+				7CF78FAB1E23919500DCC818 /* YSNSObjectViewController.m */,
+				7CF78FAD1E2391B600DCC818 /* YSNSObjectViewController.xib */,
+				7CF78FAF1E23965E00DCC818 /* YSExceptionViewController.h */,
+				7CF78FB01E23965E00DCC818 /* YSExceptionViewController.m */,
+				7CF78FB11E23965E00DCC818 /* YSExceptionViewController.xib */,
+				7CF6A10C1E02F125008BE32E /* Assets.xcassets */,
+				7CF78FB41E23E16200DCC818 /* YSNurse */,
+				7CF6A10E1E02F125008BE32E /* LaunchScreen.storyboard */,
+				7CF6A1111E02F125008BE32E /* Info.plist */,
+				7CF6A1001E02F125008BE32E /* Supporting Files */,
+			);
+			path = YSNurse;
+			sourceTree = "<group>";
+		};
+		7CF6A1001E02F125008BE32E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CF6A1011E02F125008BE32E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CF78FB41E23E16200DCC818 /* YSNurse */ = {
+			isa = PBXGroup;
+			children = (
+				7CF78FB51E23E16200DCC818 /* NSArray+Nurse.h */,
+				7CF78FB61E23E16200DCC818 /* NSArray+Nurse.m */,
+				7CF78FB71E23E16200DCC818 /* NSAttributedString+Nurse.h */,
+				7CF78FB81E23E16200DCC818 /* NSAttributedString+Nurse.m */,
+				7CF78FB91E23E16200DCC818 /* NSDictionary+Nurse.h */,
+				7CF78FBA1E23E16200DCC818 /* NSDictionary+Nurse.m */,
+				7CF78FBB1E23E16200DCC818 /* NSMutableArray+Nurse.h */,
+				7CF78FBC1E23E16200DCC818 /* NSMutableArray+Nurse.m */,
+				7CF78FBD1E23E16200DCC818 /* NSMutableAttributedString+Nurse.h */,
+				7CF78FBE1E23E16200DCC818 /* NSMutableAttributedString+Nurse.m */,
+				7CF78FBF1E23E16200DCC818 /* NSMutableDictionary+Nurse.h */,
+				7CF78FC01E23E16200DCC818 /* NSMutableDictionary+Nurse.m */,
+				7CF78FC11E23E16200DCC818 /* NSMutableString+Nurse.h */,
+				7CF78FC21E23E16200DCC818 /* NSMutableString+Nurse.m */,
+				7CF78FC31E23E16200DCC818 /* NSObject+Nurse.h */,
+				7CF78FC41E23E16200DCC818 /* NSObject+Nurse.m */,
+				7CF78FC51E23E16200DCC818 /* NSString+Nurse.h */,
+				7CF78FC61E23E16200DCC818 /* NSString+Nurse.m */,
+				7CF78FC71E23E16200DCC818 /* UIResponder+Nurse.h */,
+				7CF78FC81E23E16200DCC818 /* UIResponder+Nurse.m */,
+				7CF78FC91E23E16200DCC818 /* YSNurse.h */,
+				7CF78FCA1E23E16200DCC818 /* YSNurse.m */,
+				7CF78FCB1E23E16200DCC818 /* YSNurseMacro.h */,
+				7CF78FCC1E23E16200DCC818 /* YSNurseSwizz.h */,
+				7CF78FCD1E23E16200DCC818 /* YSNurseSwizz.m */,
+			);
+			path = YSNurse;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CF6A0FC1E02F125008BE32E /* YSNurse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF6A1141E02F125008BE32E /* Build configuration list for PBXNativeTarget "YSNurse" */;
+			buildPhases = (
+				7CF6A0F91E02F125008BE32E /* Sources */,
+				7CF6A0FA1E02F125008BE32E /* Frameworks */,
+				7CF6A0FB1E02F125008BE32E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YSNurse;
+			productName = YSNurse;
+			productReference = 7CF6A0FD1E02F125008BE32E /* YSNurse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CF6A0F51E02F125008BE32E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Joseph;
+				TargetAttributes = {
+					7CF6A0FC1E02F125008BE32E = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 38F93BBR74;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7CF6A0F81E02F125008BE32E /* Build configuration list for PBXProject "YSNurse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CF6A0F41E02F125008BE32E;
+			productRefGroup = 7CF6A0FE1E02F125008BE32E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CF6A0FC1E02F125008BE32E /* YSNurse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CF6A0FB1E02F125008BE32E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF78FB31E23965E00DCC818 /* YSExceptionViewController.xib in Resources */,
+				7CF78FAE1E2391B600DCC818 /* YSNSObjectViewController.xib in Resources */,
+				7CF6A1101E02F125008BE32E /* LaunchScreen.storyboard in Resources */,
+				7CF6A10D1E02F125008BE32E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CF6A0F91E02F125008BE32E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CE867FA1E1F7541003E5783 /* YSStringTestViewController.m in Sources */,
+				7CF78FD61E23E16200DCC818 /* NSString+Nurse.m in Sources */,
+				7CF78FD11E23E16200DCC818 /* NSMutableArray+Nurse.m in Sources */,
+				7CF6A1051E02F125008BE32E /* AppDelegate.m in Sources */,
+				7CF6A1021E02F125008BE32E /* main.m in Sources */,
+				7CE867F61E1F7281003E5783 /* YSAttributeStringTestViewController.m in Sources */,
+				7CF78FCE1E23E16200DCC818 /* NSArray+Nurse.m in Sources */,
+				7CF78FD21E23E16200DCC818 /* NSMutableAttributedString+Nurse.m in Sources */,
+				7CF78FCF1E23E16200DCC818 /* NSAttributedString+Nurse.m in Sources */,
+				7CF78FD01E23E16200DCC818 /* NSDictionary+Nurse.m in Sources */,
+				7CE867F21E1F726F003E5783 /* YSDictionaryTestViewController.m in Sources */,
+				7CF78FB21E23965E00DCC818 /* YSExceptionViewController.m in Sources */,
+				7CF78FD71E23E16200DCC818 /* UIResponder+Nurse.m in Sources */,
+				7CF78FD81E23E16200DCC818 /* YSNurse.m in Sources */,
+				7CE867EA1E1F7214003E5783 /* YSMainMenuViewController.m in Sources */,
+				7CF78FD41E23E16200DCC818 /* NSMutableString+Nurse.m in Sources */,
+				7CE867EE1E1F725C003E5783 /* YSArrayTestViewController.m in Sources */,
+				7CF78FAC1E23919500DCC818 /* YSNSObjectViewController.m in Sources */,
+				7CF78FD51E23E16200DCC818 /* NSObject+Nurse.m in Sources */,
+				7CF78FD31E23E16200DCC818 /* NSMutableDictionary+Nurse.m in Sources */,
+				7CF78FD91E23E16200DCC818 /* YSNurseSwizz.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7CF6A10E1E02F125008BE32E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CF6A10F1E02F125008BE32E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CF6A1121E02F125008BE32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7CF6A1131E02F125008BE32E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CF6A1151E02F125008BE32E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 38F93BBR74;
+				INFOPLIST_FILE = YSNurse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peanutgao.YSNurse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7CF6A1161E02F125008BE32E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 38F93BBR74;
+				INFOPLIST_FILE = YSNurse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peanutgao.YSNurse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CF6A0F81E02F125008BE32E /* Build configuration list for PBXProject "YSNurse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF6A1121E02F125008BE32E /* Debug */,
+				7CF6A1131E02F125008BE32E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CF6A1141E02F125008BE32E /* Build configuration list for PBXNativeTarget "YSNurse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF6A1151E02F125008BE32E /* Debug */,
+				7CF6A1161E02F125008BE32E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CF6A0F51E02F125008BE32E /* Project object */;
+}

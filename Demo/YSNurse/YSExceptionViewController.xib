@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D17a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YSExceptionViewController">
+            <connections>
+                <outlet property="btn" destination="HhZ-ui-zFC" id="BR7-hh-dx7"/>
+                <outlet property="imgView" destination="0hQ-in-Wby" id="eWa-ZJ-GQA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhZ-ui-zFC">
+                    <rect key="frame" x="15" y="107" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Button acton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAc-6W-RfQ">
+                    <rect key="frame" x="15" y="80" width="84" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Gesture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyv-Yd-duh">
+                    <rect key="frame" x="15" y="157" width="78.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lets_do_this" translatesAutoresizingMaskIntoConstraints="NO" id="0hQ-in-Wby">
+                    <rect key="frame" x="15" y="184" width="124" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="NNK-Gr-99v"/>
+                        <constraint firstAttribute="width" constant="124" id="yqw-Kv-S6X"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OAc-6W-RfQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="6M4-40-5kx"/>
+                <constraint firstItem="tyv-Yd-duh" firstAttribute="top" secondItem="HhZ-ui-zFC" secondAttribute="bottom" constant="20" id="MkQ-pa-AYt"/>
+                <constraint firstItem="HhZ-ui-zFC" firstAttribute="top" secondItem="OAc-6W-RfQ" secondAttribute="bottom" constant="10" id="SO6-zQ-H1b"/>
+                <constraint firstItem="HhZ-ui-zFC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="f3K-vM-KNu"/>
+                <constraint firstItem="OAc-6W-RfQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="fBi-W1-vMn"/>
+                <constraint firstItem="0hQ-in-Wby" firstAttribute="top" secondItem="tyv-Yd-duh" secondAttribute="bottom" constant="10" id="guC-a6-LXn"/>
+                <constraint firstItem="tyv-Yd-duh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="qz3-6J-rTe"/>
+                <constraint firstItem="0hQ-in-Wby" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="vkD-Op-A3X"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="62.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lets_do_this" width="250" height="156"/>
+    </resources>
+</document>

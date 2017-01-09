@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D17a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YSNSObjectViewController">
+            <connections>
+                <outlet property="descLabel" destination="Q4Y-04-AHM" id="2wb-70-Nmp"/>
+                <outlet property="view" destination="iN0-l3-epB" id="gus-bR-vgu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7S-6D-6Wn">
+                    <rect key="frame" x="15" y="133" width="345" height="30"/>
+                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="  setValue:forKeyPath:"/>
+                    <connections>
+                        <action selector="__setValueForKeyPathBtnAction" destination="-1" eventType="touchUpInside" id="X8N-uh-8Wt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4Y-04-AHM">
+                    <rect key="frame" x="15" y="80" width="345" height="18"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                    <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kuk-74-y3o">
+                    <rect key="frame" x="15" y="193" width="345" height="30"/>
+                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="  setValue:forKey:"/>
+                    <connections>
+                        <action selector="__setValueForKeyBtnAction" destination="-1" eventType="touchUpInside" id="qdr-PN-Lvj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kuk-74-y3o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Rob-Gy-7T2"/>
+                <constraint firstItem="v7S-6D-6Wn" firstAttribute="top" secondItem="Q4Y-04-AHM" secondAttribute="bottom" constant="35" id="eld-38-aSU"/>
+                <constraint firstItem="Q4Y-04-AHM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="f5Z-n2-Tdj"/>
+                <constraint firstItem="v7S-6D-6Wn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="iXd-6S-HH6"/>
+                <constraint firstItem="Q4Y-04-AHM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="mSs-SJ-BR5"/>
+                <constraint firstAttribute="trailing" secondItem="Kuk-74-y3o" secondAttribute="trailing" constant="15" id="miJ-kD-EDZ"/>
+                <constraint firstAttribute="trailing" secondItem="Q4Y-04-AHM" secondAttribute="trailing" constant="15" id="nh7-HX-JHV"/>
+                <constraint firstAttribute="trailing" secondItem="v7S-6D-6Wn" secondAttribute="trailing" constant="15" id="pI4-G2-d7r"/>
+                <constraint firstItem="Kuk-74-y3o" firstAttribute="top" secondItem="v7S-6D-6Wn" secondAttribute="bottom" constant="30" id="qGM-0i-7ce"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
