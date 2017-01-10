@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YSNurse"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A tool which can help you avoid project crash"
 
   s.homepage     = "https://github.com/peanutgao/YSNurse"
