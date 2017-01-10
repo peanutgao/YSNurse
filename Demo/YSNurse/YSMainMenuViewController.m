@@ -115,7 +115,8 @@ static NSString *const kReuseID = @"kReuseID";
 
 - (void)setupNavItem {
     UISwitch *swc = [[UISwitch alloc] init];
-    swc.on = YES;
+    swc.on = NO;
+    [YSNurse shareInstance].debugEnable = !swc.on;
     [swc addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:swc];
 }
