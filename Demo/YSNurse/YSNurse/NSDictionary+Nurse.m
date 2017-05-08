@@ -62,8 +62,7 @@
 /// initWithObjects:forKeys:
 - (instancetype)ys_initWithObjects:(NSArray<id> *)objects forKeys:(NSArray<id <NSCopying>> *)keys {
     if (keys.count == 0) {
-        YS_NURSE_PARAM_NIL_ASSERT;
-        return nil;
+        return [self ys_initWithObjects:objects forKeys:keys];
     }
     
     NSMutableArray *safeKeysM = keys.mutableCopy;
