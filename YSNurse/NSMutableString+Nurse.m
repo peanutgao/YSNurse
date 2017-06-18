@@ -57,7 +57,11 @@
         if (loc != 0 || len != 0) YS_NURSE_STRING_RANGE_ASSERT(searchRange);
         return 0;
     }
-    if (loc >= self.length) {
+    if (loc > self.length) {
+        YS_NURSE_STRING_RANGE_ASSERT(searchRange);
+        return 0;
+    }
+    if (loc == self.length && len != 0) {
         YS_NURSE_STRING_RANGE_ASSERT(searchRange);
         return 0;
     }
@@ -69,7 +73,7 @@
     return [self ys_replaceOccurrencesOfString:target
                                     withString:replacement
                                        options:options
-                                         range:NSMakeRange(loc, loc)];
+                                         range:NSMakeRange(loc, len)];
 }
 
 
@@ -101,11 +105,15 @@
         if (loc != 0 || len != 0) YS_NURSE_STRING_RANGE_ASSERT(range);
         return;
     }
-    else if (loc >= self.length) {
+    if (loc > self.length) {
         YS_NURSE_STRING_RANGE_ASSERT(range);
         return;
     }
-    else if (loc + len > self.length) {
+    if (loc == self.length && len != 0) {
+        YS_NURSE_STRING_RANGE_ASSERT(range);
+        return;
+    }
+    if (loc + len > self.length) {
         YS_NURSE_STRING_RANGE_ASSERT(range);
         len = self.length - loc;
     }

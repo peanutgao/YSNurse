@@ -95,10 +95,15 @@
         if (loc != 0 || len != 0) YS_NURSE_STRING_RANGE_ASSERT(searchRange);
         return self;
     }
-    if (loc >= self.length) {
+    if (loc > self.length) {
         YS_NURSE_STRING_RANGE_ASSERT(searchRange);
         return self;
     }
+    if (loc == self.length && len != 0) {
+        YS_NURSE_STRING_RANGE_ASSERT(searchRange);
+        return self;
+    }
+    
     if (loc + len > self.length) {
         YS_NURSE_STRING_RANGE_ASSERT(searchRange);
         len = self.length - loc;
@@ -150,7 +155,11 @@
         if (loc != 0 || len != 0) YS_NURSE_STRING_RANGE_ASSERT(range);
         return NSMakeRange(0, 0);
     }
-    if (loc >= self.length) {
+    if (loc > self.length) {
+        YS_NURSE_STRING_RANGE_ASSERT(range);
+        return NSMakeRange(0, 0);
+    }
+    if (loc == self.length && len != 0) {
         YS_NURSE_STRING_RANGE_ASSERT(range);
         return NSMakeRange(0, 0);
     }
@@ -178,7 +187,11 @@
         if (loc != 0 || len != 0) YS_NURSE_STRING_RANGE_ASSERT(rangeOfReceiverToSearch);
         return NSMakeRange(0, 0);
     }
-    if (loc >= self.length) {
+    if (loc > self.length) {
+        YS_NURSE_STRING_RANGE_ASSERT(rangeOfReceiverToSearch);
+        return NSMakeRange(0, 0);
+    }
+    if (loc == self.length && len != 0) {
         YS_NURSE_STRING_RANGE_ASSERT(rangeOfReceiverToSearch);
         return NSMakeRange(0, 0);
     }
@@ -188,6 +201,12 @@
     }
     
     return [self ys_rangeOfString:searchString options:mask range:NSMakeRange(loc, len)];
+    
+    @try {
+        return [self ys_rangeOfString:searchString options:mask range:rangeOfReceiverToSearch];
+    } @catch (NSException *exception) {
+        YS_NURSE_STRING_RANGE_ASSERT(rangeOfReceiverToSearch);
+    }
 }
 
 
@@ -206,7 +225,11 @@
         if (loc != 0 || len != 0) YS_NURSE_STRING_RANGE_ASSERT(range);
         return;
     }
-    if (loc >= self.length) {
+    if (loc > self.length) {
+        YS_NURSE_STRING_RANGE_ASSERT(range);
+        return;
+    }
+    if (loc == self.length && len != 0) {
         YS_NURSE_STRING_RANGE_ASSERT(range);
         return;
     }
@@ -227,10 +250,15 @@
         if (loc != 0 || len != 0) YS_NURSE_STRING_RANGE_ASSERT(range);
         return @"";
     }
-    if (loc >= self.length) {
+    if (loc > self.length) {
         YS_NURSE_STRING_RANGE_ASSERT(range);
         return @"";
     }
+    if (loc == self.length && len != 0) {
+        YS_NURSE_STRING_RANGE_ASSERT(range);
+        return @"";
+    }
+    
     if (loc + len > self.length) {
         YS_NURSE_STRING_RANGE_ASSERT(range);
         len = self.length - loc;
@@ -252,7 +280,7 @@
 
 /// substringFromIndex:
 - (NSString *)ys_substringFromIndex:(NSUInteger)from {
-    if (from >= self.length) {
+    if (from > self.length) {
         YS_NURSE_STRING_INDEX_ASSERT(from);
         return @"";
     }

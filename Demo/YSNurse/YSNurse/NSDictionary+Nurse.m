@@ -33,7 +33,7 @@
         YSAssert(@"One or more params is nil, but the `count` is not 0 !!!");
         return nil;
     }
-    
+
     id safeObjects[cnt];
     id safeKeys[cnt];
     NSUInteger safeCnt = 0;

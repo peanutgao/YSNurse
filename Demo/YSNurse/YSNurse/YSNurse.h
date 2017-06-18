@@ -14,9 +14,8 @@
 + (instancetype)shareInstance;
 
 @property (nonatomic, copy) NSString *clazzName;
-/// yes:   NSAssert(NO, errorDesc);
-/// NO:    NSAssert(YES, errorDesc);
-/// default is NO
+
+/// default is YES
 @property (nonatomic, assign, getter=isDebugEnable) BOOL debugEnable;
 
 @end

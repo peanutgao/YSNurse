@@ -23,9 +23,6 @@
         [YSNurseSwizz exchangeClass:clazz
                systemInstanceMethod:@selector(attributedSubstringFromRange:)
                     withSwizzMethod:@selector(ys_attributedSubstringFromRange:)];
-//        [YSNurseSwizz exchangeClass:clazz
-//               systemInstanceMethod:@selector(attribute:atIndex:effectiveRange:)
-//                    withSwizzMethod:@selector(ys_attribute:atIndex:effectiveRange:)];
         [YSNurseSwizz exchangeClass:clazz
                systemInstanceMethod:@selector(initWithString:attributes:)
                     withSwizzMethod:@selector(ys_initWithString:attributes:)];
@@ -54,36 +51,21 @@
             return nil;
         }
     }
-    else if (loc >= self.length) {
+    if (loc > self.length) {
         YS_NURSE_STRING_RANGE_ASSERT(range);
         return nil;
     }
-    else if (loc + len > self.length) {
+    if (loc == self.length && len != 0) {
+        YS_NURSE_STRING_RANGE_ASSERT(range);
+        return nil;
+    }
+    if (loc + len > self.length) {
         YS_NURSE_STRING_RANGE_ASSERT(range);
         len = self.length - loc;
     }
     
     return [self ys_attributedSubstringFromRange:NSMakeRange(loc, len)];
 }
-
-
-///// attribute:atIndex:effectiveRange:
-//- (id)ys_attribute:(NSString *)attrName atIndex:(NSUInteger)location effectiveRange:(NSRangePointer)range {
-//    NSUInteger loc = range->location;
-//    NSUInteger len = range->length;
-//    if (self.length == 0) {
-//        if (loc != 0 || len != 0) {
-//            YS_NURSE_STRING_RANGE_ASSERT(NSMakeRange(loc, len));
-//        }
-//        return nil;
-//    }
-//    else if (location >= self.length) {
-//        YS_NURSE_STRING_INDEX_ASSERT(location);
-//        return nil;
-//    }
-//    
-//    return [self ys_attribute:attrName atIndex:location effectiveRange:range];
-//}
 
 
 /// initWithString:attributes:

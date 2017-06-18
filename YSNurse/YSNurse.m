@@ -17,33 +17,34 @@
     static YSNurse *instance = nil;
     dispatch_once(&onceToken, ^{
         instance = [[self alloc] init];
+        instance.debugEnable = YES;
     });
     return instance;
 }
 
-- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
-    NSMethodSignature *methoSignature = [super methodSignatureForSelector:aSelector];
-    if (methoSignature == nil) {
-        return [NSMethodSignature signatureWithObjCTypes:"v@:"];
-    } else {
-        return methoSignature;
-    }
-}
-
-- (void)forwardInvocation:(NSInvocation *)anInvocation {
-    SEL aSelector = anInvocation.selector;
-    if ([self respondsToSelector:@selector(ignorException:)]) {
-        [self ignorException:aSelector];
-    } else {
-        [super forwardInvocation:anInvocation];
-    }
-}
-
-- (void)ignorException:(SEL)aSelector {
-    NSLog(@"*** [%@ %@] unrecognized selector sent to instance !!! ****",
-          [YSNurse shareInstance].clazzName, NSStringFromSelector(aSelector));
-    return;
-}
+//- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+//    NSMethodSignature *methoSignature = [super methodSignatureForSelector:aSelector];
+//    if (methoSignature == nil) {
+//        return [NSMethodSignature signatureWithObjCTypes:"v@:"];
+//    } else {
+//        return methoSignature;
+//    }
+//}
+//
+//- (void)forwardInvocation:(NSInvocation *)anInvocation {
+//    SEL aSelector = anInvocation.selector;
+//    if ([self respondsToSelector:@selector(ignorException:)]) {
+//        [self ignorException:aSelector];
+//    } else {
+//        [super forwardInvocation:anInvocation];
+//    }
+//}
+//
+//- (void)ignorException:(SEL)aSelector {
+//    NSLog(@"*** [%@ %@] unrecognized selector sent to instance !!! ****",
+//          [YSNurse shareInstance].clazzName, NSStringFromSelector(aSelector));
+//    return;
+//}
 
 
 @end

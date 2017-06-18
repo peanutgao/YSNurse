@@ -106,9 +106,16 @@
         YS_NURSE_PARAM_NIL_ASSERT;
         return;
     }
+    if (indexes.count == 0) {
+        [self ys_removeObjectsAtIndexes:indexes];
+        return;
+    }
     
-    NSUInteger currentIndex = [indexes firstIndex];
-    NSUInteger i, count = [indexes count];
+
+    NSInteger currentIndex = [indexes firstIndex];
+    NSInteger count = [indexes count];
+    NSInteger i = [indexes count];
+    
     if (self.count == 0) {
         if (count != 0) {
             YS_NURSE_ARRAY_INDEX_ASSERT(currentIndex);

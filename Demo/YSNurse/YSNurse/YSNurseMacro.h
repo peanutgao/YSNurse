@@ -14,7 +14,7 @@
         ({\
             NSString *errorDesc = [NSString stringWithFormat:@"Error Reason: %@", desc];\
             NSLog(@">>> %s: %@",__func__, errorDesc);\
-            NSAssert([YSNurse shareInstance].isDebugEnable, errorDesc);\
+            NSAssert(![YSNurse shareInstance].isDebugEnable, errorDesc);\
         })
 
 #define YS_NURSE_STRING_RANGE_ASSERT(aRange)\
