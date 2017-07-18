@@ -25,7 +25,8 @@
     _dataArray = [NSMutableArray array];
     NSMutableArray *arrayData = [NSMutableArray arrayWithObjects:
                                  @"dictionaryWithObjects:forKeys:count:",
-                                 @"initWithObjects:forKeys:", nil];
+                                 @"initWithObjects:forKeys:",
+                                 @"dictionaryWithObjects:forKeys:", nil];
     NSMutableArray *arrayMData = [NSMutableArray arrayWithObjects:
                                   @"setObject:forKey:",
                                   @"removeObjectForKey:", nil];
@@ -75,7 +76,7 @@ static NSString *const kReuseID = @"kReuseID";
                 values[i] = [NSNumber numberWithInt:i];
             }
             
-            // 1. size of values /size of keys / count different
+            // 1. different length
             NSDictionary *dict = [NSDictionary dictionaryWithObjects:values forKeys:keys count:5];
             
             // 2. objects or keys is nil, but count is not 0
@@ -84,7 +85,31 @@ static NSString *const kReuseID = @"kReuseID";
             NSLog(@"dict: %@", dict);
             NSLog(@"dict1: %@", dict1);
         }
-        else {
+        else if (indexPath.row == 1) {
+            // 1. objects is nil
+            NSDictionary *dict = [[NSDictionary alloc] initWithObjects:nilArray forKeys:@[@"name", @"gender", @"age"]];
+            NSLog(@"dict: %@", dict);
+            
+            // 2. objects is empty
+            NSDictionary *dict1 = [[NSDictionary alloc] initWithObjects:emptyArray forKeys:@[@"name", @"gender", @"age"]];
+            NSLog(@"dict1: %@", dict1);
+            
+            // 3. keys is nil
+            NSDictionary *dict2 = [[NSDictionary alloc] initWithObjects:@[@"Joseph", @0] forKeys:nilArray];
+            NSLog(@"dict2: %@", dict2);
+            
+            // 4. keys is nil
+            NSDictionary *dict3 = [[NSDictionary alloc] initWithObjects:@[@"Joseph", @0] forKeys:emptyArray];
+            NSLog(@"dict3: %@", dict3);
+            
+            // 5. objects'count is different of keys's
+            NSDictionary *dict4 = [[NSDictionary alloc] initWithObjects:@[@"Joseph"] forKeys:@[@"name", @"gender", @"age"]];
+            NSLog(@"dict4: %@", dict4);
+            
+            NSDictionary *dict5 = [[NSDictionary alloc] initWithObjects:@[@"Joseph", @0, @"iPhone"] forKeys:@[@"name"]];
+            NSLog(@"dict5: %@", dict5);
+        }
+        else if (indexPath.row == 2) {
             // 1. objects is nil
             NSDictionary *dict = [NSDictionary dictionaryWithObjects:nilArray forKeys:@[@"name", @"gender", @"age"]];
             NSLog(@"dict: %@", dict);

@@ -136,12 +136,12 @@ static NSString *const kReuseID = @"kReuseID";
             
             // 1. nil index set
             [arrayM removeObjectsAtIndexes:nilSet];
-            
+
             // 2. empty test
             NSMutableIndexSet *set = [NSMutableIndexSet indexSetWithIndex:0];
             [set addIndex:8];
             [arrayM removeObjectsAtIndexes:set];
-            
+
             // 3. out of array's bounds
             [arrayM addObjectsFromArray:@[@"a", @"b", @"c", @"d", @"e"]];
             [arrayM removeObjectsAtIndexes:set];

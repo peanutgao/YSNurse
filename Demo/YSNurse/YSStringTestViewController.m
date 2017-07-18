@@ -193,6 +193,11 @@ static NSString *const kReuseID = @"kReuseID";
             // 2. empty string test, out of string's bound
             NSRange range4 = [str rangeOfComposedCharacterSequencesForRange:NSMakeRange(1, 15)];
             NSLog(@"range4: %@", NSStringFromRange(range4));
+            
+            
+            NSRange range5 = [@"A" rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, 2)];
+            NSLog(@"range5: %@", NSStringFromRange(range4));
+            
         }
         else if (indexPath.row == 5) {
             NSString *str = @"HelloWorld";

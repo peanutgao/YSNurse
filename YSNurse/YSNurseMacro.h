@@ -9,10 +9,13 @@
 #ifndef YSNurseMacro_h
 #define YSNurseMacro_h
 
-// 
+//
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
+
 #define YSAssert(desc)\
         ({\
-            NSString *errorDesc = [NSString stringWithFormat:@"Error Reason: %@", desc];\
+            NSString *errorDesc __attribute__((unused)) = [NSString stringWithFormat:@"Error Reason: %@", desc];\
             NSLog(@">>> %s: %@",__func__, errorDesc);\
             NSAssert(![YSNurse shareInstance].isDebugEnable, errorDesc);\
         })
@@ -48,6 +51,6 @@
 
 #define YS_NURSE_PARAM_NIL_ASSERT YSAssert(@"One or more `nil` arguments which can not be nil !!!")
 
-
+#pragma clang diagnostic pop
 
 #endif /* YSNurseMacro_h */

@@ -41,15 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setupNavItem];
     [self combineDataArrayWithSuccesHandle:NULL];
-}
-
-
-#pragma mark - Action
-
-- (void)switchAction:(UISwitch *)swc {
-    [YSNurse shareInstance].debugEnable = swc.isOn;
 }
 
 
@@ -110,14 +102,4 @@ static NSString *const kReuseID = @"kReuseID";
     return _dataArray;
 }
 
-
-#pragma mark - Setup UI
-
-- (void)setupNavItem {
-    UISwitch *swc = [[UISwitch alloc] init];
-    swc.on = NO;
-    [YSNurse shareInstance].debugEnable = !swc.on;
-    [swc addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:swc];
-}
 @end
