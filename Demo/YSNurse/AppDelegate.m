@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YSMainMenuViewController.h"
+#import "YSNurse.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,9 @@
     UINavigationController *nav = [[UINavigationController alloc]
                                    initWithRootViewController:[[YSMainMenuViewController alloc] init]];
     self.window.rootViewController = nav;
+    
+    [YSNurse configEnable:YES];
+    
     [self.window makeKeyAndVisible];
     
     return YES;

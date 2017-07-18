@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C41D3DA1F1B1159004C42DD /* YSNurse+Array.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C41D3D91F1B1159004C42DD /* YSNurse+Array.m */; };
+		7C41D3DE1F1B1A7D004C42DD /* YSNurse+Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C41D3DD1F1B1A7D004C42DD /* YSNurse+Dictionary.m */; };
+		7C41D3E11F1B1B55004C42DD /* YSNurse+String.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C41D3E01F1B1B55004C42DD /* YSNurse+String.m */; };
+		7C41D3E41F1B1C56004C42DD /* YSNurse+AttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C41D3E31F1B1C56004C42DD /* YSNurse+AttributedString.m */; };
+		7C41D3E71F1B1D2E004C42DD /* YSNurse+Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C41D3E61F1B1D2E004C42DD /* YSNurse+Object.m */; };
 		7CE867EA1E1F7214003E5783 /* YSMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE867E91E1F7214003E5783 /* YSMainMenuViewController.m */; };
 		7CE867EE1E1F725C003E5783 /* YSArrayTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE867ED1E1F725C003E5783 /* YSArrayTestViewController.m */; };
 		7CE867F21E1F726F003E5783 /* YSDictionaryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE867F11E1F726F003E5783 /* YSDictionaryTestViewController.m */; };
@@ -20,21 +25,22 @@
 		7CF78FAE1E2391B600DCC818 /* YSNSObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CF78FAD1E2391B600DCC818 /* YSNSObjectViewController.xib */; };
 		7CF78FB21E23965E00DCC818 /* YSExceptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FB01E23965E00DCC818 /* YSExceptionViewController.m */; };
 		7CF78FB31E23965E00DCC818 /* YSExceptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CF78FB11E23965E00DCC818 /* YSExceptionViewController.xib */; };
-		7CF78FCE1E23E16200DCC818 /* NSArray+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FB61E23E16200DCC818 /* NSArray+Nurse.m */; };
-		7CF78FCF1E23E16200DCC818 /* NSAttributedString+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FB81E23E16200DCC818 /* NSAttributedString+Nurse.m */; };
-		7CF78FD01E23E16200DCC818 /* NSDictionary+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FBA1E23E16200DCC818 /* NSDictionary+Nurse.m */; };
-		7CF78FD11E23E16200DCC818 /* NSMutableArray+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FBC1E23E16200DCC818 /* NSMutableArray+Nurse.m */; };
-		7CF78FD21E23E16200DCC818 /* NSMutableAttributedString+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FBE1E23E16200DCC818 /* NSMutableAttributedString+Nurse.m */; };
-		7CF78FD31E23E16200DCC818 /* NSMutableDictionary+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FC01E23E16200DCC818 /* NSMutableDictionary+Nurse.m */; };
-		7CF78FD41E23E16200DCC818 /* NSMutableString+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FC21E23E16200DCC818 /* NSMutableString+Nurse.m */; };
-		7CF78FD51E23E16200DCC818 /* NSObject+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FC41E23E16200DCC818 /* NSObject+Nurse.m */; };
-		7CF78FD61E23E16200DCC818 /* NSString+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FC61E23E16200DCC818 /* NSString+Nurse.m */; };
 		7CF78FD71E23E16200DCC818 /* UIResponder+Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FC81E23E16200DCC818 /* UIResponder+Nurse.m */; };
 		7CF78FD81E23E16200DCC818 /* YSNurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FCA1E23E16200DCC818 /* YSNurse.m */; };
-		7CF78FD91E23E16200DCC818 /* YSNurseSwizz.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF78FCD1E23E16200DCC818 /* YSNurseSwizz.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C41D3D81F1B1159004C42DD /* YSNurse+Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YSNurse+Array.h"; sourceTree = "<group>"; };
+		7C41D3D91F1B1159004C42DD /* YSNurse+Array.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YSNurse+Array.m"; sourceTree = "<group>"; };
+		7C41D3DC1F1B1A7D004C42DD /* YSNurse+Dictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YSNurse+Dictionary.h"; sourceTree = "<group>"; };
+		7C41D3DD1F1B1A7D004C42DD /* YSNurse+Dictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YSNurse+Dictionary.m"; sourceTree = "<group>"; };
+		7C41D3DF1F1B1B55004C42DD /* YSNurse+String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YSNurse+String.h"; sourceTree = "<group>"; };
+		7C41D3E01F1B1B55004C42DD /* YSNurse+String.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YSNurse+String.m"; sourceTree = "<group>"; };
+		7C41D3E21F1B1C56004C42DD /* YSNurse+AttributedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YSNurse+AttributedString.h"; sourceTree = "<group>"; };
+		7C41D3E31F1B1C56004C42DD /* YSNurse+AttributedString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YSNurse+AttributedString.m"; sourceTree = "<group>"; };
+		7C41D3E51F1B1D2E004C42DD /* YSNurse+Object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YSNurse+Object.h"; sourceTree = "<group>"; };
+		7C41D3E61F1B1D2E004C42DD /* YSNurse+Object.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YSNurse+Object.m"; sourceTree = "<group>"; };
+		7C8E99541F1BAF3D00944B0C /* YSNurseSwizz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSNurseSwizz.h; sourceTree = "<group>"; };
 		7CE867E81E1F7214003E5783 /* YSMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMainMenuViewController.h; sourceTree = "<group>"; };
 		7CE867E91E1F7214003E5783 /* YSMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMainMenuViewController.m; sourceTree = "<group>"; };
 		7CE867EC1E1F725C003E5783 /* YSArrayTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSArrayTestViewController.h; sourceTree = "<group>"; };
@@ -58,31 +64,11 @@
 		7CF78FAF1E23965E00DCC818 /* YSExceptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSExceptionViewController.h; sourceTree = "<group>"; };
 		7CF78FB01E23965E00DCC818 /* YSExceptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSExceptionViewController.m; sourceTree = "<group>"; };
 		7CF78FB11E23965E00DCC818 /* YSExceptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSExceptionViewController.xib; sourceTree = "<group>"; };
-		7CF78FB51E23E16200DCC818 /* NSArray+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Nurse.h"; sourceTree = "<group>"; };
-		7CF78FB61E23E16200DCC818 /* NSArray+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Nurse.m"; sourceTree = "<group>"; };
-		7CF78FB71E23E16200DCC818 /* NSAttributedString+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Nurse.h"; sourceTree = "<group>"; };
-		7CF78FB81E23E16200DCC818 /* NSAttributedString+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Nurse.m"; sourceTree = "<group>"; };
-		7CF78FB91E23E16200DCC818 /* NSDictionary+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Nurse.h"; sourceTree = "<group>"; };
-		7CF78FBA1E23E16200DCC818 /* NSDictionary+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Nurse.m"; sourceTree = "<group>"; };
-		7CF78FBB1E23E16200DCC818 /* NSMutableArray+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Nurse.h"; sourceTree = "<group>"; };
-		7CF78FBC1E23E16200DCC818 /* NSMutableArray+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Nurse.m"; sourceTree = "<group>"; };
-		7CF78FBD1E23E16200DCC818 /* NSMutableAttributedString+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Nurse.h"; sourceTree = "<group>"; };
-		7CF78FBE1E23E16200DCC818 /* NSMutableAttributedString+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Nurse.m"; sourceTree = "<group>"; };
-		7CF78FBF1E23E16200DCC818 /* NSMutableDictionary+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Nurse.h"; sourceTree = "<group>"; };
-		7CF78FC01E23E16200DCC818 /* NSMutableDictionary+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Nurse.m"; sourceTree = "<group>"; };
-		7CF78FC11E23E16200DCC818 /* NSMutableString+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+Nurse.h"; sourceTree = "<group>"; };
-		7CF78FC21E23E16200DCC818 /* NSMutableString+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Nurse.m"; sourceTree = "<group>"; };
-		7CF78FC31E23E16200DCC818 /* NSObject+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Nurse.h"; sourceTree = "<group>"; };
-		7CF78FC41E23E16200DCC818 /* NSObject+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Nurse.m"; sourceTree = "<group>"; };
-		7CF78FC51E23E16200DCC818 /* NSString+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Nurse.h"; sourceTree = "<group>"; };
-		7CF78FC61E23E16200DCC818 /* NSString+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Nurse.m"; sourceTree = "<group>"; };
 		7CF78FC71E23E16200DCC818 /* UIResponder+Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Nurse.h"; sourceTree = "<group>"; };
 		7CF78FC81E23E16200DCC818 /* UIResponder+Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Nurse.m"; sourceTree = "<group>"; };
 		7CF78FC91E23E16200DCC818 /* YSNurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSNurse.h; sourceTree = "<group>"; };
 		7CF78FCA1E23E16200DCC818 /* YSNurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSNurse.m; sourceTree = "<group>"; };
 		7CF78FCB1E23E16200DCC818 /* YSNurseMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSNurseMacro.h; sourceTree = "<group>"; };
-		7CF78FCC1E23E16200DCC818 /* YSNurseSwizz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSNurseSwizz.h; sourceTree = "<group>"; };
-		7CF78FCD1E23E16200DCC818 /* YSNurseSwizz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSNurseSwizz.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,31 +139,22 @@
 		7CF78FB41E23E16200DCC818 /* YSNurse */ = {
 			isa = PBXGroup;
 			children = (
-				7CF78FB51E23E16200DCC818 /* NSArray+Nurse.h */,
-				7CF78FB61E23E16200DCC818 /* NSArray+Nurse.m */,
-				7CF78FB71E23E16200DCC818 /* NSAttributedString+Nurse.h */,
-				7CF78FB81E23E16200DCC818 /* NSAttributedString+Nurse.m */,
-				7CF78FB91E23E16200DCC818 /* NSDictionary+Nurse.h */,
-				7CF78FBA1E23E16200DCC818 /* NSDictionary+Nurse.m */,
-				7CF78FBB1E23E16200DCC818 /* NSMutableArray+Nurse.h */,
-				7CF78FBC1E23E16200DCC818 /* NSMutableArray+Nurse.m */,
-				7CF78FBD1E23E16200DCC818 /* NSMutableAttributedString+Nurse.h */,
-				7CF78FBE1E23E16200DCC818 /* NSMutableAttributedString+Nurse.m */,
-				7CF78FBF1E23E16200DCC818 /* NSMutableDictionary+Nurse.h */,
-				7CF78FC01E23E16200DCC818 /* NSMutableDictionary+Nurse.m */,
-				7CF78FC11E23E16200DCC818 /* NSMutableString+Nurse.h */,
-				7CF78FC21E23E16200DCC818 /* NSMutableString+Nurse.m */,
-				7CF78FC31E23E16200DCC818 /* NSObject+Nurse.h */,
-				7CF78FC41E23E16200DCC818 /* NSObject+Nurse.m */,
-				7CF78FC51E23E16200DCC818 /* NSString+Nurse.h */,
-				7CF78FC61E23E16200DCC818 /* NSString+Nurse.m */,
+				7C41D3D81F1B1159004C42DD /* YSNurse+Array.h */,
+				7C41D3D91F1B1159004C42DD /* YSNurse+Array.m */,
+				7C41D3DC1F1B1A7D004C42DD /* YSNurse+Dictionary.h */,
+				7C41D3DD1F1B1A7D004C42DD /* YSNurse+Dictionary.m */,
+				7C41D3DF1F1B1B55004C42DD /* YSNurse+String.h */,
+				7C41D3E01F1B1B55004C42DD /* YSNurse+String.m */,
+				7C41D3E21F1B1C56004C42DD /* YSNurse+AttributedString.h */,
+				7C41D3E31F1B1C56004C42DD /* YSNurse+AttributedString.m */,
+				7C41D3E51F1B1D2E004C42DD /* YSNurse+Object.h */,
+				7C41D3E61F1B1D2E004C42DD /* YSNurse+Object.m */,
+				7C8E99541F1BAF3D00944B0C /* YSNurseSwizz.h */,
 				7CF78FC71E23E16200DCC818 /* UIResponder+Nurse.h */,
 				7CF78FC81E23E16200DCC818 /* UIResponder+Nurse.m */,
 				7CF78FC91E23E16200DCC818 /* YSNurse.h */,
 				7CF78FCA1E23E16200DCC818 /* YSNurse.m */,
 				7CF78FCB1E23E16200DCC818 /* YSNurseMacro.h */,
-				7CF78FCC1E23E16200DCC818 /* YSNurseSwizz.h */,
-				7CF78FCD1E23E16200DCC818 /* YSNurseSwizz.m */,
 			);
 			path = YSNurse;
 			sourceTree = "<group>";
@@ -255,27 +232,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C41D3E71F1B1D2E004C42DD /* YSNurse+Object.m in Sources */,
 				7CE867FA1E1F7541003E5783 /* YSStringTestViewController.m in Sources */,
-				7CF78FD61E23E16200DCC818 /* NSString+Nurse.m in Sources */,
-				7CF78FD11E23E16200DCC818 /* NSMutableArray+Nurse.m in Sources */,
+				7C41D3E41F1B1C56004C42DD /* YSNurse+AttributedString.m in Sources */,
 				7CF6A1051E02F125008BE32E /* AppDelegate.m in Sources */,
+				7C41D3DE1F1B1A7D004C42DD /* YSNurse+Dictionary.m in Sources */,
 				7CF6A1021E02F125008BE32E /* main.m in Sources */,
+				7C41D3E11F1B1B55004C42DD /* YSNurse+String.m in Sources */,
 				7CE867F61E1F7281003E5783 /* YSAttributeStringTestViewController.m in Sources */,
-				7CF78FCE1E23E16200DCC818 /* NSArray+Nurse.m in Sources */,
-				7CF78FD21E23E16200DCC818 /* NSMutableAttributedString+Nurse.m in Sources */,
-				7CF78FCF1E23E16200DCC818 /* NSAttributedString+Nurse.m in Sources */,
-				7CF78FD01E23E16200DCC818 /* NSDictionary+Nurse.m in Sources */,
+				7C41D3DA1F1B1159004C42DD /* YSNurse+Array.m in Sources */,
 				7CE867F21E1F726F003E5783 /* YSDictionaryTestViewController.m in Sources */,
 				7CF78FB21E23965E00DCC818 /* YSExceptionViewController.m in Sources */,
 				7CF78FD71E23E16200DCC818 /* UIResponder+Nurse.m in Sources */,
 				7CF78FD81E23E16200DCC818 /* YSNurse.m in Sources */,
 				7CE867EA1E1F7214003E5783 /* YSMainMenuViewController.m in Sources */,
-				7CF78FD41E23E16200DCC818 /* NSMutableString+Nurse.m in Sources */,
 				7CE867EE1E1F725C003E5783 /* YSArrayTestViewController.m in Sources */,
 				7CF78FAC1E23919500DCC818 /* YSNSObjectViewController.m in Sources */,
-				7CF78FD51E23E16200DCC818 /* NSObject+Nurse.m in Sources */,
-				7CF78FD31E23E16200DCC818 /* NSMutableDictionary+Nurse.m in Sources */,
-				7CF78FD91E23E16200DCC818 /* YSNurseSwizz.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

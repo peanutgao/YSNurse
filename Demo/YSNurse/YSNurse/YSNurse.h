@@ -7,15 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "YSNurseMacro.h"
 
 @interface YSNurse : NSObject
 
-+ (instancetype)shareInstance;
+//@property (nonatomic, copy) NSString *clazzName;
 
-@property (nonatomic, copy) NSString *clazzName;
-
-/// default is YES
-@property (nonatomic, assign, getter=isDebugEnable) BOOL debugEnable;
++ (void)configEnable:(BOOL)enable;
 
 @end

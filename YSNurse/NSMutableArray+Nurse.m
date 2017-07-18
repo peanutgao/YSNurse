@@ -191,7 +191,7 @@
         }
     }
     else {
-        if (loc >= self.count) {
+        if (loc >= self.count && len != 0) {
             YS_NURSE_ARRAY_RANGE_ASSERT(range);
             return;
         }

@@ -9,17 +9,26 @@
 #import "YSNurse.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
+#import "YSNurseMacro.h"
+#import "YSNurse+Array.h"
+#import "YSNurse+Dictionary.h"
+#import "YSNurse+String.h"
+#import "YSNurse+AttributedString.h"
+#import "YSNurse+Object.h"
 
 @implementation YSNurse
 
-+ (instancetype)shareInstance {
++ (void)configEnable:(BOOL)enable {
+    if (enable == NO) return;
+    
     static dispatch_once_t onceToken;
-    static YSNurse *instance = nil;
     dispatch_once(&onceToken, ^{
-        instance = [[self alloc] init];
-        instance.debugEnable = YES;
+        [self ys_arrayMethodSwizz];
+        [self ys_dictionaryMethodSwizz];
+        [self ys_stringMethodSwizz];
+        [self ys_attributedStringMethodSwizz];
+        [self ys_objectMethodSwizz];
     });
-    return instance;
 }
 
 //- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
@@ -45,6 +54,5 @@
 //          [YSNurse shareInstance].clazzName, NSStringFromSelector(aSelector));
 //    return;
 //}
-
 
 @end
